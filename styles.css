@@ -1,6 +1,13 @@
+html {
+  font-family: Satoshi-Black, sans-serif;
+}
 a {
   text-decoration: none;
   color: black;
+}
+
+p {
+  font-family: Satoshi-Black, sans-serif;
 }
 
 ul {
@@ -8,11 +15,18 @@ ul {
   margin: auto;
   padding: 0;
   background-color: #ececec;
+  font-family: Satoshi-Black, sans-serif;
 }
 
 .heading {
   display: flex;
   background-color: #ececec;
+}
+
+.intro-header {
+  font-family: Satoshi-Bold, sans-serif;
+  font-weight: bold;
+  font-size: 90px;
 }
 
 .logo {
@@ -26,6 +40,7 @@ img {
 
 p {
   display: flex;
+  font-family: Satoshi-Black, sans-serif;
 }
 
 li {
@@ -50,23 +65,57 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   margin: 40px 20px;
   border-radius: 8px;
   cursor: pointer;
+  font-family: Satoshi-Black, sans-serif;
 }
 
 .intro {
   display: grid;
   grid-template-columns: auto auto;
   background-color: white;
-  padding: 10px;
+  padding: 200px;
+  gap: 70px;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 16px;
+  background-color: #ececec;
+  padding: 250px;
+  font-size: 14px;
   text-align: center;
+}
+
+.grid-item2 {
+  background-color: white;
+  padding: 10px;
+  width: 600px;
+  font-size: large;
+}
+
+.shop {
+  border: none;
+  color: white;
+  background-color: #0b25b7;
+  padding: 15px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.learn {
+  border: solid #0b25b7;
+  color: #0b25b7;
+  background-color: white;
+  padding: 15px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
 }
