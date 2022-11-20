@@ -119,3 +119,40 @@ button {
   border-radius: 50px;
   cursor: pointer;
 }
+
+.catalogue {
+  display: grid;
+  gap: 0.5cm;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.description {
+  display: grid;
+  width: 200px;
+  padding: 5px 3px;
+  margin-left: 5cm;
+  padding: 18;
+}
+.article1 {
+  background-color: #ececec;
+}
+.article2 {
+  background-color: #ececec;
+}
+.article3 {
+  background-color: #ececec;
+}
+
+.circle {
+  color: black;
+  position: relative;
+  border-radius: 10%;
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: #ececec;
+  padding: 0px 0px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
