@@ -1,3 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  margin: 1rem;
+  display: grid;
+}
+
 html {
   font-family: Satoshi-Black, sans-serif;
 }
@@ -14,6 +29,12 @@ a:hover {
 
 p {
   font-family: Satoshi-Black, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px 0px 00px 0px;
 }
 
 ul {
@@ -131,6 +152,7 @@ button {
   gap: 0.05cm;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 2cm;
+  margin-left: 10px;
 }
 
 .description {
@@ -143,17 +165,19 @@ button {
 .article1 {
   background-color: #ececec;
   width: 350px;
-  border-radius: 12px;
+  border-radius: 50px 0px 50px 0px;
 }
 .article2 {
   background-color: #ececec;
   width: 350px;
   border-radius: 12px;
+  border-radius: 50px 0px 50px 0px;
 }
 .article3 {
   background-color: #ececec;
   width: 350px;
   border-radius: 12px;
+  border-radius: 50px 0px 50px 0px;
 }
 
 .circle {
@@ -180,7 +204,8 @@ button {
   display: grid;
   gap: 0.5cm;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-left: 200px;
+  margin-left: 100px;
+  padding-bottom: 2cm;
 }
 
 .trending_title {
@@ -190,5 +215,93 @@ button {
 .entry1 {
   background-color: #ececec;
   width: 350px;
-  border-radius: 12px;
+  border-radius: 50px 0px 50px 0px;
+  padding: 18;
+}
+
+.entry2 {
+  background-color: #ececec;
+  width: 350px;
+  border-radius: 50px 0px 50px 0px;
+  padding: 18;
+}
+
+.blackcircles {
+  letter-spacing: 10px;
+  padding-left: 0.5cm;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 600px 500px 1fr;
+
+  gap: none;
+  background-color: #ececec;
+  padding-top: 2cm;
+  max-width: 100%;
+}
+
+.cvr {
+  display: flex;
+}
+
+footer a {
+  padding-top: 1cm;
+  padding-left: 10cm;
+}
+
+footer p {
+  padding-left: 0.5cm;
+}
+
+footer h3 {
+  padding-left: 0.2cm;
+}
+
+footer h1 {
+  padding-left: 9cm;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.horizontal-logo {
+  width: 20%;
+}
+
+.svg {
+  word-spacing: 15px;
+}
+
+p .svg {
+  padding-right: 20px;
+  margin-right: ;
+}
+
+.copyright {
+  display: grid;
+  font-weight: bold;
+  column-gap: 15cm;
+  padding-right: 20px;
+}
+
+.upperfooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lowerfooter {
+  display: grid;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    grid-column: 1/-1;
+  }
 }
