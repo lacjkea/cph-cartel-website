@@ -21,10 +21,24 @@ a {
   color: black;
 }
 
+.nav {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
 a:hover {
   background-color: rgba(0, 0, 0, 0.786);
   color: white;
   border-radius: 10px;
+}
+
+footer a:hover {
+  background-color: rgba(0, 0, 0, 0.786);
+  color: white;
+  border-radius: 10px;
+  width: 40%;
 }
 
 p {
@@ -233,8 +247,8 @@ button {
 
 footer {
   display: grid;
-  grid-template-columns: 600px 500px 1fr;
-
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3cm;
   gap: none;
   background-color: #ececec;
   padding-top: 2cm;
@@ -247,19 +261,19 @@ footer {
 
 footer a {
   padding-top: 1cm;
-  padding-left: 10cm;
+  padding-left: 1cm;
 }
 
 footer p {
-  padding-left: 0.5cm;
+  padding-left: 0cm;
 }
 
 footer h3 {
-  padding-left: 0.2cm;
+  padding-left: none;
 }
 
 footer h1 {
-  padding-left: 9cm;
+  padding-left: 1cm;
 }
 
 hr {
@@ -272,16 +286,16 @@ hr {
 }
 
 .horizontal-logo {
-  width: 20%;
+  width: 35%;
 }
 
 .svg {
   word-spacing: 15px;
+  justify-content: right;
 }
 
-p .svg {
-  padding-right: 20px;
-  margin-right: ;
+path {
+  letter-spacing: 12px;
 }
 
 .copyright {
@@ -300,8 +314,12 @@ p .svg {
   display: grid;
 }
 
-@media only screen and (min-width: 1000px) {
-  header {
-    grid-column: 1/-1;
+@media (width > 15em) {
+  body {
+    grid-template-columns: repeat(1fr 1fr);
+  }
+
+  main {
+    grid-template-columns: repeat(1fr 1fr);
   }
 }
